@@ -6,4 +6,7 @@ package com.self.tools;
  */
 public class Configs {
 
+    private static final String PUBLIC_URL = "";
+
+
 }

@@ -10,6 +10,12 @@ import java.lang.reflect.Field;
  */
 public class JsonUtils {
 
+    /**
+     * json 2 bean
+     * @param jObject
+     * @param clazz
+     * @return
+     */
     public static Object parseJson(JSONObject jObject,Class<?> clazz){
         try{
             Object obj = clazz.newInstance();
@@ -34,6 +40,12 @@ public class JsonUtils {
         return null;
     }
 
+    /**
+     * string 2 bean
+     * @param json
+     * @param clazz
+     * @return
+     */
     public static Object parseJson(String json,Class<?> clazz){
         try{
             JSONObject jObject = new JSONObject(json);
@@ -44,6 +56,11 @@ public class JsonUtils {
         return null;
     }
 
+    /**
+     * json 2 string
+     * @param obj
+     * @return
+     */
     public static String parseJson2String(Object obj){
         try{
             JSONObject jObject = new JSONObject();
