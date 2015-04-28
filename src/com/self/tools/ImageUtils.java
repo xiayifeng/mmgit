@@ -14,6 +14,17 @@ import java.net.URL;
  */
 public class ImageUtils {
 
+    private ImageUtils(){}
+
+    private static ImageUtils instances;
+
+    public static ImageUtils getInstances(){
+        if(instances == null){
+            instances = new ImageUtils();
+        }
+        return instances;
+    }
+
     public void startView(String url,ImageView imageView,boolean isCir){
         LoadImageTask loadImageTask = new LoadImageTask(imageView,isCir);
         loadImageTask.execute(url);

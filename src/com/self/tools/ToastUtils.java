@@ -6,6 +6,7 @@ import android.widget.Toast;
 import com.self.resource.ResourceUtils;
 
 /**
+ * toast file
  * Created by sh-xiayf on 15-4-27.
  */
 public class ToastUtils {
